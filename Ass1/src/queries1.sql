@@ -5,9 +5,10 @@ SELECT car_id, car_brand, car_model, milage FROM car WHERE milage = (SELECT MIN(
 
 --3) Show the most popular car brand.
 
---4)
-
---5)
+--4) How many Insurance Companies are from Upsala?
+SELECT count(company_id) FROM insurance_company WHERE company_adress = 'Smörebröd, 898989 Upsala'
+--5) How many different insurance coverages are avaiable?
+SELECT count(distinct package_name) FROM insurance_company
 
 ----Two table questions
 --6) Show the full name of who own what car model and brand.
@@ -16,7 +17,7 @@ SELECT car_id, car_brand, car_model, milage FROM car WHERE milage = (SELECT MIN(
 
 --8) Show which coverages are offered by which company.
 
---9)
+--9) Show the insurance product name and the insurance company name
 
 --10)
 
