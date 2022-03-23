@@ -6,29 +6,30 @@ SELECT car_id, car_brand, car_model, milage FROM car WHERE milage = (SELECT MIN(
 --3) Show the most popular car brand.
 
 --4) How many Insurance Companies are from Upsala?
-SELECT count(company_id) FROM insurance_company WHERE company_adress = 'Smörebröd, 898989 Upsala'
+SELECT count(company_id) FROM insurance_company WHERE company_city = 'Upsala'
 --5) How many different insurance coverages are avaiable?
-SELECT count(distinct package_name) FROM insurance_company
+SELECT count(distinct package_name) FROM insurance_coverage
 
 ----Two table questions
 --6) Show the full name of who own what car model and brand.
 
---7) Who owns a BMW and show which model.
+--7) Who owns a KITT and show which model.
 
---8) Show which coverages are offered by which company.
-
---9) Show the insurance product name and the insurance company name
-
---10)
+--8) Show how many coverages are offered by which company.
+SELECT c.company_name, count(p.package_name) FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id GROUP BY c.company_name
+--9) Show the insurance product name and the insurance company name, grouped by company
+SELECT c.company_name, p.package_name FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id GROUP BY c.company_name
+--10) Wich company has the cheapest product?
+SELECT c.company_name, p.package_name, p.package_cost FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id ORDER BY p.package_cost asc limit 1
 
 ----Three table questions
---11)
+--11) What kind of car does Michael Knight drive, who is his insurance company and wich product does he have?
 
---12)
+--12)Who is the owner of the Batmobil and who is the insurance company?
 
---13)
+--13)Count how many cars each product has, group by insurance company
 
---14)
+--14)What is the average cost from each product, show as well the company
 
 --15)
 
