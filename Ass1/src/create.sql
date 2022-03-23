@@ -1,3 +1,11 @@
+---- Sweet introduction
+/* 
+Welcome to the Smash-Brothers Broker Company! We are the leading broker for your car insurance!
+We have a small database with our favourite customers and our prefered insurance provider.
+You can see what fancy cars we have insured and what famous customers we have in our portfolio.
+*/
+
+
 ---- Create table insurance_company
 CREATE TABLE insurance_company
 (
