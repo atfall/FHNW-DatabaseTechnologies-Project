@@ -3,7 +3,8 @@ CREATE TABLE insurance_company
 (
 company_id          INT             NOT NULL, 
 company_name        VARCHAR(30)     NOT NULL,
-company_adress      VARCHAR(50)     NOT NULL,
+company_street      VARCHAR(50)     NOT NULL,
+company_city        VARCHAR(50)     NOT NULL,
 PRIMARY KEY   (company_id));
 
 
@@ -45,25 +46,25 @@ FOREIGN KEY (customer_id) REFERENCES customer(customer_id));
 
 ---- Fill table insurance_company
 INSERT INTO insurance_company VALUES
-(1, 'Ooops Insurance', 'Next Corner Left 46, 4001 Basel');
+(1, 'Ooops Insurance', 'Next Corner Left 46', 'Basel');
 INSERT INTO insurance_company VALUES
-(2, 'I did it again Insurance Inc.', 'Somewhere over trb, 6060 Overthere');
+(2, 'I did it again Insurance Inc.', 'Somewhere over trb', 'Overthere');
 INSERT INTO insurance_company VALUES
-(3, 'Hit me Insure. and Co', 'Wordstreet 11, 4002 Basel');
+(3, 'Hit me Insure and Co', 'Wordstreet 11', 'Basel');
 INSERT INTO insurance_company VALUES
-(4, 'Crash test dummies Inc.', 'Death Star 1, 666 Orbit');
+(4, 'Crash test dummies Inc.', 'Death Star 1', 'Orbit');
 INSERT INTO insurance_company VALUES
-(5, 'How Bizarre Versicherungen', 'Sm�rebr�d, 898989 Upsala');
+(5, 'How Bizarre Versicherungen', 'Smallland 34', 'Upsala');
 INSERT INTO insurance_company VALUES
-(6, 'Dont look back in Anger', 'Knie Circus 1, 8001 Z�ri');
+(6, 'Dont look back in Anger', 'Knie Circus 1', 'Zurich');
 INSERT INTO insurance_company VALUES
-(7, 'Crash test dummies Inc.', 'Whats the story 1th, 9 London');
+(7, 'Crash test dummies Inc.', 'Whats the story 1th', 'London');
 INSERT INTO insurance_company VALUES
-(8, 'Would I lie to you?', 'Spotify 111, 401 HTTP');
+(8, 'Would I lie to you?', 'Spotify 111', 'HTTP');
 INSERT INTO insurance_company VALUES
-(9, 'Joyride', 'Sm�rebr�d, 898989 Upsala');
+(9, 'Joyride', 'IKEA Road 1', 'Upsala');
 INSERT INTO insurance_company VALUES
-(10, 'Shiny Happy People (SHP)', 'Hotel California, 1-2-1 Dessert');
+(10, 'Shiny Happy People (SHP)', 'Hotel California', 'Dessert');
 
 
 ---- Fill table insurance_coverage
@@ -76,19 +77,76 @@ INSERT INTO insurance_coverage VALUES
 INSERT INTO insurance_coverage VALUES
 (104, 'Ooops- we will pay all and more', 1400, 1);
 
+INSERT INTO insurance_coverage VALUES
+(201, 'Basic', 99, 2);
+INSERT INTO insurance_coverage VALUES
+(202, 'Medium', 199, 2);
+INSERT INTO insurance_coverage VALUES
+(203, 'All', 499, 2);
+
+INSERT INTO insurance_coverage VALUES
+(301, 'Bleu', 105, 3);
+INSERT INTO insurance_coverage VALUES
+(302, 'Rare', 205, 3);
+INSERT INTO insurance_coverage VALUES
+(303, 'Medium Rare', 305, 3);
+INSERT INTO insurance_coverage VALUES
+(304, 'Medium Rare', 405, 3);
+INSERT INTO insurance_coverage VALUES
+(305, 'Well Done', 505, 3);
+
+INSERT INTO insurance_coverage VALUES
+(401, 'one', 101, 4);
+INSERT INTO insurance_coverage VALUES
+(402, 'two', 202, 4);
+INSERT INTO insurance_coverage VALUES
+(403, ‚'three', 303, 4);
+INSERT INTO insurance_coverage VALUES
+(404, ‚'four', 404, 4);
+INSERT INTO insurance_coverage VALUES
+(405, ‚'five', 505, 4);
+
+INSERT INTO insurance_coverage VALUES
+(501, 'dies', 200, 5);
+INSERT INTO insurance_coverage VALUES
+(502, 'das', 500, 5);
+
+INSERT INTO insurance_coverage VALUES
+(601, 'dies', 200, 6;
+
+INSERT INTO insurance_coverage VALUES
+(701, 'dies', 402, 7);
+
+INSERT INTO insurance_coverage VALUES
+(801, 'hit someone', 100, 8);
+INSERT INTO insurance_coverage VALUES
+(802, 'got hit', 500, 8);
+INSERT INTO insurance_coverage VALUES
+(803, ‚'idk what happend', 1000, 8);
+
+INSERT INTO insurance_coverage VALUES
+(901, '909', 909, 9);
+INSERT INTO insurance_coverage VALUES
+(902, '911', 911, 9);
+INSERT INTO insurance_coverage VALUES
+(903, ‚'919', 919, 9);
+
+INSERT INTO insurance_coverage VALUES
+(1001, 'you get nothing', 999, 10);
+
 ---- Fill table customer
 INSERT INTO customer VALUES
-(2001, 'John', 'Addams', 'Home Town', 101);
+(2001, 'Michael', 'Knight', 'Nevada', 101);
 INSERT INTO customer VALUES
-(2002, 'Mary', 'Jones', 'New Town', 102);
+(2002, 'Doc', 'Brown', 'New Town', 102);
 INSERT INTO customer VALUES
-(2003, 'Stephen', 'Dylan', 'Basel', 103);
+(2003, 'Batman', 'The', 'Gotham City', 103);
 INSERT INTO customer VALUES
-(2004, 'Rebeca', 'Garcia', 'Bern', 104);
+(2004, 'Till', 'Schweiger', 'Bern', 104);
 INSERT INTO customer VALUES
-(2005, 'Rudi', 'Beck', 'Basel', 104);
+(2005, 'Stephan', 'King', 'Portland', 104);
 INSERT INTO customer VALUES
-(2006, 'Louie', 'Quintana', 'Basel', 102);
+(2006, 'Ghostbusters', 'Who you gonna call', 'Basel', 102);
 INSERT INTO customer VALUES
 (2007, 'Ashanti', 'Ashley', 'Basel', 103);
 INSERT INTO customer VALUES
@@ -104,18 +162,18 @@ INSERT INTO car VALUES
 INSERT INTO car VALUES
 (3002, 'Tesla', 'Model 3', 'Blue', 20, 2002);
 INSERT INTO car VALUES
-(3003, 'Toyota', 'Prius', 'Blue', 15, 2003);
+(3003, 'DeLorean ', 'DMC-12', 'Silver', 15, 2003);
 INSERT INTO car VALUES
-(3004, 'Volkswagen', 'Golf', 'Black', 25, 2004);
+(3004, 'Batmobile', 'Tumbler', 'Black', 25, 2004);
 INSERT INTO car VALUES
-(3005, 'BMW', 'M3', 'Red', 50, 2005);
+(3005, 'GMC', 'Vandura', 'Black-Red', 50, 2005);
 INSERT INTO car VALUES
-(3006, 'Mercedes', 'S-Class', 'Silver', 40, 2006);
+(3006, 'Opel', 'Manta', 'Yellow', 40, 2006);
 INSERT INTO car VALUES
-(3007, 'Volkswagen', 'UP', 'Red', 12, 2007);
+(3007, 'Plymouth', ' Fury Christine', 'Red', 12, 2007);
 INSERT INTO car VALUES
-(3008, 'BMW', 'i3', 'Black', 15, 2008);
+(3008, 'BMW', 'i3', 'Red', 15, 2008);
 INSERT INTO car VALUES
-(3009, 'Audi', 'R8', 'Red', 10, 2009);
+(3009, 'KITT', 'One', 'Black', 10, 2009);
 INSERT INTO car VALUES
-(3010, 'Volvo', 'V60', 'Blue', 20, 2010);
+(3010, 'Cadilac', 'ECTO-1', 'White', 20, 2010);
