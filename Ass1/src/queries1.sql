@@ -1,20 +1,20 @@
 ----One table questions
 --1) Show the car_id, car_brand, car_model and milage of the car that has the lowest milage.
 SELECT car_id, car_brand, car_model, milage FROM car WHERE milage = (SELECT MIN(milage) from car);
---2)
+--2) Show the most popular car colour.
 
---3)
+--3) Show the most popular car brand.
 
 --4)
 
 --5)
 
 ----Two table questions
---6)
+--6) Show the full name of who own what car model and brand.
 
---7)
+--7) Who owns a BMW and show which model.
 
---8)
+--8) Show which coverages are offered by which company.
 
 --9)
 
