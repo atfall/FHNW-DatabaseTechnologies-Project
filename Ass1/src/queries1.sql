@@ -2,9 +2,10 @@
 --1) Show the car_id, car_brand, car_model and milage of the car that has the lowest milage.
 SELECT car_id, car_brand, car_model, milage FROM car WHERE milage = (SELECT MIN(milage) from car);
 --2) Show the most popular car colour.
-
---3) Show the most popular car brand.
-
+SELECT car_colour FROM car WHERE car_colour = (SELECT MAX(COUNT(car_colour)) from car;
+--3) Show the top 3 most popular insurance coverages. 
+--(NOTE!: the LIMIT command didnt work here so i had to use ROWNUM instead)
+SELECT * FROM (SELECT package_id FROM customer ORDER BY COUNT(package_id) DESC) ROWNUM <= 3;
 --4) How many Insurance Companies are from Upsala?
 SELECT count(company_id) FROM insurance_company WHERE company_city = 'Upsala'
 --5) How many different insurance coverages are avaiable?

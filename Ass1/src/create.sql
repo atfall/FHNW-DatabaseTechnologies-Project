@@ -20,7 +20,7 @@ PRIMARY KEY   (company_id));
 CREATE TABLE insurance_coverage
 (
 package_id         INT             NOT NULL, 
-package_name       VARCHAR(30)     NOT NULL,
+package_name       VARCHAR(50)     NOT NULL,
 package_cost       INT             NOT NULL,
 company_id         INT             NOT NULL,
 PRIMARY KEY   (package_id),
@@ -33,7 +33,7 @@ CREATE TABLE customer
 customer_id         INT             NOT NULL, 
 first_name          VARCHAR(30)     NOT NULL,
 last_name           VARCHAR(30)     NOT NULL,
-customer_address    VARCHAR(50)     NOT NULL,
+customer_city    VARCHAR(50)     NOT NULL,
 package_id          INT             NOT NULL,
 PRIMARY KEY   (customer_id),
 FOREIGN KEY   (package_id) REFERENCES insurance_coverage(package_id));
@@ -108,11 +108,11 @@ INSERT INTO insurance_coverage VALUES
 INSERT INTO insurance_coverage VALUES
 (402, 'two', 202, 4);
 INSERT INTO insurance_coverage VALUES
-(403, ‚'three', 303, 4);
+(403, 'three', 303, 4);
 INSERT INTO insurance_coverage VALUES
-(404, ‚'four', 404, 4);
+(404, 'four', 404, 4);
 INSERT INTO insurance_coverage VALUES
-(405, ‚'five', 505, 4);
+(405, 'five', 505, 4);
 
 INSERT INTO insurance_coverage VALUES
 (501, 'dies', 200, 5);
@@ -120,7 +120,7 @@ INSERT INTO insurance_coverage VALUES
 (502, 'das', 500, 5);
 
 INSERT INTO insurance_coverage VALUES
-(601, 'dies', 200, 6;
+(601, 'dies', 200, 6);
 
 INSERT INTO insurance_coverage VALUES
 (701, 'dies', 402, 7);
@@ -130,14 +130,14 @@ INSERT INTO insurance_coverage VALUES
 INSERT INTO insurance_coverage VALUES
 (802, 'got hit', 500, 8);
 INSERT INTO insurance_coverage VALUES
-(803, ‚'idk what happend', 1000, 8);
+(803, 'idk what happend', 1000, 8);
 
 INSERT INTO insurance_coverage VALUES
 (901, '909', 909, 9);
 INSERT INTO insurance_coverage VALUES
 (902, '911', 911, 9);
 INSERT INTO insurance_coverage VALUES
-(903, ‚'919', 919, 9);
+(903, '919', 919, 9);
 
 INSERT INTO insurance_coverage VALUES
 (1001, 'you get nothing', 999, 10);
@@ -150,19 +150,23 @@ INSERT INTO customer VALUES
 INSERT INTO customer VALUES
 (2003, 'Batman', 'The', 'Gotham City', 103);
 INSERT INTO customer VALUES
-(2004, 'Till', 'Schweiger', 'Bern', 104);
+(2004, 'Till', 'Schweiger', 'Bern', 304);
 INSERT INTO customer VALUES
-(2005, 'Stephan', 'King', 'Portland', 104);
+(2005, 'Stephan', 'King', 'Portland', 304);
 INSERT INTO customer VALUES
 (2006, 'Ghostbusters', 'Who you gonna call', 'Basel', 102);
 INSERT INTO customer VALUES
 (2007, 'Ashanti', 'Ashley', 'Basel', 103);
 INSERT INTO customer VALUES
-(2008, 'Hubert', 'Shelton', 'Bern', 104);
+(2008, 'Hubert', 'Shelton', 'Bern', 304);
 INSERT INTO customer VALUES
 (2009, 'Tom', 'Piper', 'Basel', 103);
 INSERT INTO customer VALUES
-(2010, 'Jill', 'Morrison', 'Zurich', 104);
+(2010, 'Jill', 'Morrison', 'Zurich', 304);
+INSERT INTO customer VALUES
+(2011, 'Scooby', 'Doo', 'Dooville', 104);
+INSERT INTO customer VALUES
+(2012, 'Thomas', 'Edison', 'New Jersey', 103);
 
 ---- Fill table car
 INSERT INTO car VALUES
@@ -185,3 +189,7 @@ INSERT INTO car VALUES
 (3009, 'KITT', 'One', 'Black', 10, 2009);
 INSERT INTO car VALUES
 (3010, 'Cadilac', 'ECTO-1', 'White', 20, 2010);
+INSERT INTO car VALUES
+(3011, 'Unknown', 'Unknown', 'Blue', 20, 2011);
+INSERT INTO customer VALUES
+(3012, 'Tesla', 'Model Y', 'Yellow', 2012);
