@@ -53,7 +53,12 @@ inner join car c on c.customer_id=cu.customer_id
 where c.car_brand='Batmobile';
 
 --15)Which car pays the cheapest insurance price?
-
+select c.car_brand, c.car_model
+from car c
+inner join customer cu on c.customer_id=cu.customer_id
+inner join insurance_coverage ic on cu.package_id=ic.package_id
+where ic.package_cost is not null and
+(select min(package_cost) from insurance_coverage where package_cost is not null)=ic.package_cost; 
 
 ----Four table questions
 --16)Who is the owner of the Batmobil and who is the insurance company?
