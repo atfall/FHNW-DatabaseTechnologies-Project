@@ -72,8 +72,21 @@ left join insurance_coverage ic on cu.package_id = ic.package_id
 left join insurance_company ico on ico.company_id = ic.company_id
 where cu.last_name = 'Knight' and
 cu.first_name = 'Michael';
---18)
 
---19)
+--18)Show all information about a customer, regarding which car (brand & model), which insurance company with which product ordered in alphabetic order by last name
+select cu.first_name,cu.last_name,c.car_brand, c.car_model, ic.package_name, co.company_name
+from customer cu
+inner join car c on c.customer_id=cu.customer_id
+left join insurance_coverage ic on ic.package_id=cu.package_id
+left join insurance_company co on ic.company_id = co.company_id
+order by cu.last_name asc;
+
+--19)Who drives the real all black cars, show details for customer (first & lastname), car(brand & model) and insurance(company & product)
+select cu.first_name,cu.last_name,c.car_brand, c.car_model, ic.package_name, co.company_name
+from customer cu
+inner join car c on c.customer_id=cu.customer_id
+left join insurance_coverage ic on ic.package_id=cu.package_id
+left join insurance_company co on ic.company_id = co.company_id
+where c.car_colour = 'Black';
 
 --20)
