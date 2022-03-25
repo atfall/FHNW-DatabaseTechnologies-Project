@@ -164,7 +164,7 @@ INSERT INTO customer VALUES
 INSERT INTO customer VALUES
 (2007, 'Ashanti', 'Ashley', 'Basel', 103);
 INSERT INTO customer VALUES
-(2008, 'Hubert', 'Shelton', 'Bern', 304);
+(2008, 'Hubert', 'Shelton', 'Bern', 201);
 INSERT INTO customer VALUES
 (2009, 'Tom', 'Piper', 'Basel', 103);
 INSERT INTO customer VALUES
@@ -188,7 +188,7 @@ INSERT INTO car VALUES
 INSERT INTO car VALUES
 (3006, 'Opel', 'Manta', 'Yellow', 40, 2006);
 INSERT INTO car VALUES
-(3007, 'Plymouth', ' Fury Christine', 'Red', 12, 2007);
+(3007, 'Plymouth', 'Fury Christine', 'Red', 12, 2007);
 INSERT INTO car VALUES
 (3008, 'BMW', 'i3', 'Red', 15, 2008);
 INSERT INTO car VALUES
