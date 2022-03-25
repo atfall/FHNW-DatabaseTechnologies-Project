@@ -197,5 +197,5 @@ INSERT INTO car VALUES
 (3010, 'Cadilac', 'ECTO-1', 'White', 20, 2010);
 INSERT INTO car VALUES
 (3011, 'Unknown', 'Unknown', 'Blue', 20, 2011);
-INSERT INTO customer VALUES
-(3012, 'Tesla', 'Model Y', 'Yellow', 2012);
+INSERT INTO car  VALUES
+(3012, 'Tesla', 'Model Y', 'Yellow', 99, 2012);
