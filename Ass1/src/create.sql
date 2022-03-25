@@ -39,7 +39,7 @@ CREATE TABLE customer
 customer_id         INT             NOT NULL, 
 first_name          VARCHAR(30)     NOT NULL,
 last_name           VARCHAR(30)     NOT NULL,
-customer_city    VARCHAR(50)     NOT NULL,
+customer_city       VARCHAR(50)     NOT NULL,
 package_id          INT             NOT NULL,
 PRIMARY KEY   (customer_id),
 FOREIGN KEY   (package_id) REFERENCES insurance_coverage(package_id));
