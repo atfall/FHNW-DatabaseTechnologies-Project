@@ -24,10 +24,15 @@ SELECT c.company_name, p.package_name FROM insurance_company c LEFT JOIN insuran
 SELECT * FROM (SELECT c.company_name, p.package_name, p.package_cost FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id ORDER BY p.package_cost asc) WHERE ROWNUM <= 1;
 
 ----Three table questions
---11) What kind of car does Michael Knight drive, who is his insurance company and wich product does he have?
-
+--11) Count how many cars each product has
+select ic.package_name,  count(c.customer_id)
+from insurance_coverage ic 
+inner join customer c on c.package_id=ic.package_id
+inner join insurance_company ico on ico.company_id=ic.company_id
+group by ic.package_name;
 --12)
---13)Count how many cars each product has, group by insurance company
+
+--13)
 
 --14)What is the average cost from each product, show as well the company
 
@@ -37,8 +42,14 @@ SELECT * FROM (SELECT c.company_name, p.package_name, p.package_cost FROM insura
 --16)Who is the owner of the Batmobil and who is the insurance company?
 SELECT first_name, last_name, company_name FROM customer cust INNER JOIN insurance_coverage cov ON cust.package_id = cov.package_id INNER JOIN insurance_company comp ON cov.company_id = comp.company_id INNER JOIN car ON cust.customer_id = car.customer_id WHERE car_brand = 'Batmobile';
 
---17)
-
+--17)What kind of car does Michael Knight drive, who is his insurance company and wich product does he have?
+select c.car_brand, c.car_model, ic.package_name 
+from customer cu
+left join car c on c.customer_id = cu.customer_id 
+left join insurance_coverage ic on cu.package_id = ic.package_id 
+left join insurance_company ico on ico.company_id = ic.company_id
+where cu.last_name = 'Knight' and
+cu.first_name = 'Michael';
 --18)
 
 --19)
