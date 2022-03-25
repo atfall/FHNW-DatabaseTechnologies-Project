@@ -121,15 +121,15 @@ INSERT INTO insurance_coverage VALUES
 (405, 'five', 505, 4);
 
 INSERT INTO insurance_coverage VALUES
-(501, 'dies', 200, 5);
+(501, 'this', 200, 5);
 INSERT INTO insurance_coverage VALUES
-(502, 'das', 500, 5);
+(502, 'that', 500, 5);
 
 INSERT INTO insurance_coverage VALUES
-(601, 'dies', 200, 6);
+(601, 'this', 200, 6);
 
 INSERT INTO insurance_coverage VALUES
-(701, 'dies', 402, 7);
+(701, 'it wasnt me', 402, 7);
 
 INSERT INTO insurance_coverage VALUES
 (801, 'hit someone', 100, 8);
