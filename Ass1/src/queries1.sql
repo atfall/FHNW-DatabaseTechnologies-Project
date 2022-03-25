@@ -89,4 +89,10 @@ left join insurance_coverage ic on ic.package_id=cu.package_id
 left join insurance_company co on ic.company_id = co.company_id
 where c.car_colour = 'Black';
 
---20)
+--20)Which car can be seen in the city, where his insurance company is also located? Show brand and model
+select c.car_brand, c.car_model
+from customer cu
+inner join car c on c.customer_id=cu.customer_id
+left join insurance_coverage ic on ic.package_id=cu.package_id
+left join insurance_company co on ic.company_id = co.company_id
+where co.company_city = cu.customer_city;
