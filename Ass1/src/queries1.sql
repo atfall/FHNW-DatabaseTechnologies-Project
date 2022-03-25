@@ -24,19 +24,36 @@ SELECT c.company_name, p.package_name FROM insurance_company c LEFT JOIN insuran
 SELECT * FROM (SELECT c.company_name, p.package_name, p.package_cost FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id ORDER BY p.package_cost asc) WHERE ROWNUM <= 1;
 
 ----Three table questions
---11) Count how many cars each product has
+--11) Count how many customers each product has
 select ic.package_name,  count(c.customer_id)
 from insurance_coverage ic 
 inner join customer c on c.package_id=ic.package_id
 inner join insurance_company ico on ico.company_id=ic.company_id
 group by ic.package_name;
---12)
 
---13)
+--12)Which customer has which insurance coverage, show name of the company, name of the product, full name of customer order by company and package name
+select ico.company_name, ic.package_name,  c.first_name, c.last_name
+from insurance_coverage ic 
+inner join customer c on c.package_id=ic.package_id
+inner join insurance_company ico on ico.company_id=ic.company_id
+order by ico.company_name, ic.package_name
 
---14)What is the average cost from each product, show as well the company
+--13)Show how many customers each company has with the detail as well on the product
+select ico.company_name, ic.package_name,  count(c.customer_id)
+from insurance_coverage ic 
+inner join customer c on c.package_id=ic.package_id
+inner join insurance_company ico on ico.company_id=ic.company_id
+group by ico.company_name, ic.package_name
 
---15)
+--14)What kind of coverage does the batmobile have?
+select ic.package_name
+from insurance_coverage ic
+inner join customer cu on cu.package_id=ic.package_id
+inner join car c on c.customer_id=cu.customer_id
+where c.car_brand='Batmobile';
+
+--15)Which car pays the cheapest insurance price?
+
 
 ----Four table questions
 --16)Who is the owner of the Batmobil and who is the insurance company?
