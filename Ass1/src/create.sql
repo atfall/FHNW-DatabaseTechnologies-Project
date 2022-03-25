@@ -5,6 +5,12 @@ We have a small database with our favourite customers and our prefered insurance
 You can see what fancy cars we have insured and what famous customers we have in our portfolio.
 */
 
+---- clean-up for create new tables
+DROP TABLE insurance_company;
+DROP TABLE insurance_coverage;
+DROP TABLE customer;
+DROP TABLE car;
+
 
 ---- Create table insurance_company
 CREATE TABLE insurance_company
