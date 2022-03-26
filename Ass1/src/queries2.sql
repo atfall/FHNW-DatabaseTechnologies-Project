@@ -37,6 +37,7 @@ WHEN DELETING THEN 'DELETE'
 END;
 INSERT INTO audits (table_name, transaction_name, by_user, transaction_date) VALUES('Car', l_transaction, USER, SYSDATE);
 END;
+/
 
 ----One View of 4 Tables
 DROP VIEW V;

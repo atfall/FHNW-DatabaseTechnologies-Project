@@ -19,7 +19,7 @@ SELECT first_name, last_name, car_model FROM customer cust INNER JOIN car car ON
 --8) Show how many coverages are offered by which company.
 SELECT c.company_name, count(p.package_name) FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id GROUP BY c.company_name;
 --9) Show the insurance product name and the insurance company name, grouped by company
-SELECT c.company_name, p.package_name FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id GROUP BY c.company_name;
+SELECT c.company_name, p.package_name FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id;
 --10) Wich company has the cheapest product?
 SELECT * FROM (SELECT c.company_name, p.package_name, p.package_cost FROM insurance_company c LEFT JOIN insurance_coverage p on c.company_id = p.company_id ORDER BY p.package_cost asc) WHERE ROWNUM <= 1;
 
@@ -36,14 +36,14 @@ select ico.company_name, ic.package_name,  c.first_name, c.last_name
 from insurance_coverage ic 
 inner join customer c on c.package_id=ic.package_id
 inner join insurance_company ico on ico.company_id=ic.company_id
-order by ico.company_name, ic.package_name
+order by ico.company_name, ic.package_name;
 
 --13)Show how many customers each company has with the detail as well on the product
 select ico.company_name, ic.package_name,  count(c.customer_id)
 from insurance_coverage ic 
 inner join customer c on c.package_id=ic.package_id
 inner join insurance_company ico on ico.company_id=ic.company_id
-group by ico.company_name, ic.package_name
+group by ico.company_name, ic.package_name;
 
 --14)What kind of coverage does the batmobile have?
 select ic.package_name
