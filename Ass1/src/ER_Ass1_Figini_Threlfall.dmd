@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ER_Ass1_Figini_Threlfall" id="180595AE-F40D-A89B-4BC6-4D8C344077C3" version="3.5">
+<createdBy>rom</createdBy>
+<createdTime>2022-04-02 15:37:50 UTC</createdTime>
+<ownerDesignName>ER_Ass1_Figini_Threlfall</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>180595AE-F40D-A89B-4BC6-4D8C344077C3</designId>
+</OSDM_Design>
