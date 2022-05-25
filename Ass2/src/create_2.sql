@@ -44,7 +44,8 @@ last_name           VARCHAR(30)     NOT NULL,
 city_zip            INT             NOT NULL,
 package_id          INT             NOT NULL,
 PRIMARY KEY   (customer_id),
-FOREIGN KEY   (package_id) REFERENCES insurance_coverage(package_id));
+FOREIGN KEY   (package_id) REFERENCES insurance_coverage(package_id),
+FOREIGN KEY (city_zip) REFERENCES city(city_zip));
 
 
 ---- Create table car
