@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8C49CABA-EF7C-85DC-54D5-AAB668C31177" name="car_index">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:29:14 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="car_id" id="6BCAA9F3-D645-DDA3-37C6-F2C2C30D0418">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:29:25 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="brand" id="0A8DDE66-8522-FAE1-BF51-A5677C7F024D">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:29:37 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model" id="DF0D7100-61F7-B8B5-F849-6ED10CDA860F">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:29:46 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="23E3FE2B-B63F-3FBC-EA2B-C7F79691EAD9">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 12:10:01 UTC</createdTime>
+<generatorID>B19A66D7-71BA-41F2-088B-89E1FEB97DD3</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<referedAttribute>1F11C664-411A-B8D1-6DAF-7DB846B8F99F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="157A6567-8573-5F69-6D70-364BB2C0EF44" name="car_index_PK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:29:34 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6BCAA9F3-D645-DDA3-37C6-F2C2C30D0418</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

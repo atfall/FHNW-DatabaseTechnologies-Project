@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="246AC6DA-3A15-78FD-A02E-D99DF0C00809" name="city">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>D50CF096-CAD5-187C-1D7E-84855DEA5338</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="city_zip" id="2DDA0CB9-5D71-77F4-EB8B-5274FA522B78">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>6F87D08C-3D6C-29C6-65A4-A7BC90F8B58E</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city_name" id="A7408468-F324-DDAB-A786-A21D92AB6515">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>ADB8974B-4E9A-E574-306E-994E95D1384A</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D70B465A-5A77-9D26-C4FB-1E64650746E4" name="city_PK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>D13DFA97-D205-C4D4-83C1-AD696849F269</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DDA0CB9-5D71-77F4-EB8B-5274FA522B78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

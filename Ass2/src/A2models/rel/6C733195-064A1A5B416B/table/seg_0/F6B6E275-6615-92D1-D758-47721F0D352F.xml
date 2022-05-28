@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6B6E275-6615-92D1-D758-47721F0D352F" name="insurance_company">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>652EAE99-F923-2B34-460D-6B5058CF5F3C</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="company_id" id="4D94DB2C-A769-573E-0E35-B92028378D8F">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>821A8F95-87D4-45C9-8F6D-88505FCB22A0</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_name" id="2551874E-BB07-B854-48C5-6B5413D2181D">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>CD892446-705F-7B7D-0CBB-53EE98977D93</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_street" id="E87088D6-B3A4-134B-A3E3-F798B93F124A">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>E2727679-6BFD-5649-9692-A318106CE47F</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city_city_zip" id="097218A7-BE34-263D-79C2-6189384C1F8E">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>EA838B28-60F9-35AD-FA29-0C5C4C2044DC</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34E8EF89-D6D6-5A4E-5C25-BB9C54B4184A" referredColumn="2DDA0CB9-5D71-77F4-EB8B-5274FA522B78"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F5E94D0-D9FD-628F-9290-A07D86190134" name="insurance_company_PK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>F8079998-3CC2-3A02-FA57-EB67B1533EA1</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D94DB2C-A769-573E-0E35-B92028378D8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49DAB292-68B5-E490-1596-4DE4BC14C443" name="insurance_company_city_FK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>42880A57-D284-AD6C-83C2-6B7233CE72B8</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="097218A7-BE34-263D-79C2-6189384C1F8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

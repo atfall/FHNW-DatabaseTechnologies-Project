@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="owned cars car index FK" directorySegmentName="seg_0" id="B19A66D7-71BA-41F2-088B-89E1FEB97DD3">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:30:22 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<sourcePk>157A6567-8573-5F69-6D70-364BB2C0EF44</sourcePk>
+<targetPk>3E261384-4BD5-CA3E-4607-194B4B995709</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8C49CABA-EF7C-85DC-54D5-AAB668C31177</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>13D4E648-913A-07DD-80DC-A767C5CC8A16</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

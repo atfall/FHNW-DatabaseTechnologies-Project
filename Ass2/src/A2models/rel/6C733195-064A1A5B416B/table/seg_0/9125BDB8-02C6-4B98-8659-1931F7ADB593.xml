@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9125BDB8-02C6-4B98-8659-1931F7ADB593" name="car_colour">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:38:41 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="colour_id" id="4ED78CA9-319F-9AAA-014C-CF714377A83F">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:39:15 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="colour" id="570F4568-AB4A-FA3A-57AC-B7BAB14CCCC0">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:39:15 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B28FB4A-D369-A9C5-511F-1E95E7F97757" name="car_colour_PK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:39:15 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4ED78CA9-319F-9AAA-014C-CF714377A83F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

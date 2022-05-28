@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="insurance package insurance company FK" directorySegmentName="seg_0" id="EAECA21B-65D3-5985-C51B-18E462AD63FC">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-25 14:24:20 UTC</createdTime>
+<generatorID>58744079-73B5-1C6F-2DEF-3F8534A667D2</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<sourcePk>F8079998-3CC2-3A02-FA57-EB67B1533EA1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>652EAE99-F923-2B34-460D-6B5058CF5F3C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>09F5FEE1-01C0-62AC-8CD2-D294DC3E4683</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

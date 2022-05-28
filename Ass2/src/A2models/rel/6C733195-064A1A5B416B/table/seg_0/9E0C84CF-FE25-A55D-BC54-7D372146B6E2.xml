@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E0C84CF-FE25-A55D-BC54-7D372146B6E2" name="owned_cars">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>13D4E648-913A-07DD-80DC-A767C5CC8A16</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9E5ECC6D-2749-B405-CDA0-0AF2FFE4327E">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>1F11C664-411A-B8D1-6DAF-7DB846B8F99F</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="milage" id="EC2E36E3-D4A1-D689-4FB2-66659A5CF6C4">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:51:36 UTC</createdTime>
+<generatorID>B2907051-442C-4182-F1B8-0BA61DD60E44</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="car_colour_colour_id" id="FC1254D1-2905-A159-7E9F-778EE65D1674">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>8742935B-281E-B548-54C8-E74F1A6E3B6C</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE458312-432E-9F23-6F42-F9B5FD04911C" referredColumn="4ED78CA9-319F-9AAA-014C-CF714377A83F"/>
+</associations>
+</Column>
+<Column name="insurance_package_package_id" id="956435C5-E293-DBDA-4EF1-721219DBE213">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>A2D031AE-F426-BF23-8800-A1EC6AF7ABD8</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E23FC26D-DEEC-F61A-0348-C80F7B93ADBB" referredColumn="FECF7C8E-52FA-FF58-1E41-618B50DE1F02"/>
+</associations>
+</Column>
+<Column name="customer_customer_id" id="FFE1D3D6-88E3-A192-6694-44A6E5A7E494">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>4E53BF47-CBB2-571A-90D1-E4E531F44652</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="091DC973-29E5-82E1-57C5-2386C4434BF3" referredColumn="03A78D04-3EA7-402A-F65E-6E1700AE284F"/>
+</associations>
+</Column>
+<Column name="car_index_car_id" id="8944A2F8-0215-ED4B-339F-AFB24496C8B2">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>DCE4931A-E0A1-007A-7372-A51D00D50BA1</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86E9CB23-A5D1-72A9-F32F-1D34FB553E95" referredColumn="88C00B59-8F16-BA98-C5F4-4ECB51AFDB8F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44375267-00E7-56E7-2AEC-C648EEBF328D" name="owned_cars_PK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>3E261384-4BD5-CA3E-4607-194B4B995709</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E5ECC6D-2749-B405-CDA0-0AF2FFE4327E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="206FC200-8AC3-13C4-D244-852F5A6163B7" name="owned_cars__IDX">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B19A66D7-71BA-41F2-088B-89E1FEB97DD3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8944A2F8-0215-ED4B-339F-AFB24496C8B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4141E733-5B0D-2E31-9D6C-3D4E35CBEFB0" name="customer_id_FK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>B167759C-2B39-76D8-B082-358A9A677196</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFE1D3D6-88E3-A192-6694-44A6E5A7E494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B551D0A6-9773-8EC3-B995-DBD76AA19DB4" name="car_index_FK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>B19A66D7-71BA-41F2-088B-89E1FEB97DD3</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8944A2F8-0215-ED4B-339F-AFB24496C8B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B06B3F3-6303-2B7C-4EA2-0CDE453A93EC" name="insurance_package_FK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>D70B67E0-93AD-7CD8-D985-F2B0CA79E596</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="956435C5-E293-DBDA-4EF1-721219DBE213"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="392E0395-903D-0A01-D7E8-C0EE3E5B8258" name="car_colour_FK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:39:46 UTC</createdTime>
+<ownerDesignName>A2models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC1254D1-2905-A159-7E9F-778EE65D1674"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

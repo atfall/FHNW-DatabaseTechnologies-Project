@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="46589BC5-4196-1A14-7A92-8E60B6042F29" name="customer">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-25 14:24:20 UTC</createdTime>
+<generatorID>4F2B3C7A-13BA-9B5C-B00F-26B1DC9BAC35</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="customer_id" id="727F6ACC-5ABE-564A-D155-ACF2B71BCC3F">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-25 14:24:20 UTC</createdTime>
+<generatorID>99F68EB7-73DC-1D01-9433-BFF3059BAB60</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="EFACE144-6EEB-41FF-719B-AD446F73A062">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-25 14:24:20 UTC</createdTime>
+<generatorID>5C6193BE-D029-5731-3FE7-CE80572D1E7E</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="DE17BA4F-AAE5-9C99-B426-94D7D9D1C5FF">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-25 14:24:20 UTC</createdTime>
+<generatorID>C1BCD671-B873-A816-B7FD-BBBC96CAE703</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city_zip" id="52196D58-D582-D273-90BB-E49F2B077C78">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-25 14:24:20 UTC</createdTime>
+<generatorID>393277B4-2E30-E407-EC48-16AAC26B0802</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="true"/>
+</engineerTo>
+<referedAttribute>6F87D08C-3D6C-29C6-65A4-A7BC90F8B58E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4EF590D8-E637-D382-85CD-9635E8578ED2" name="customer PK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-25 14:24:20 UTC</createdTime>
+<generatorID>EE2BA269-C2A3-055F-F328-4C81D595B07F</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6C733195-D3B1-B590-4067-064A1A5B416B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>727F6ACC-5ABE-564A-D155-ACF2B71BCC3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5736F0B-FB52-9300-C375-0E42727A7C9F" name="customer">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>46589BC5-4196-1A14-7A92-8E60B6042F29</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="03A78D04-3EA7-402A-F65E-6E1700AE284F">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>727F6ACC-5ABE-564A-D155-ACF2B71BCC3F</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="11BE93F0-997C-5B11-ADF0-2551424D7DD5">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>EFACE144-6EEB-41FF-719B-AD446F73A062</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="ED80DE53-20E7-10F5-5A8B-86E2512F6FE7">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>DE17BA4F-AAE5-9C99-B426-94D7D9D1C5FF</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city_city_zip" id="94B9B7F6-6979-9F8F-EFC0-6DF9FA3E516D">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>52196D58-D582-D273-90BB-E49F2B077C78</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4FCB4140-D4B4-5991-4DD2-FF2371EE1D23" referredColumn="2DDA0CB9-5D71-77F4-EB8B-5274FA522B78"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5CCBFCC-373B-AC89-5BA9-2FE1B47C6E54" name="customer_PK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>4EF590D8-E637-D382-85CD-9635E8578ED2</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03A78D04-3EA7-402A-F65E-6E1700AE284F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C95735F-54FB-0C5E-98DD-D0D34F201AED" name="customer_city_FK">
+<createdBy>Adam</createdBy>
+<createdTime>2022-05-28 11:32:29 UTC</createdTime>
+<generatorID>393277B4-2E30-E407-EC48-16AAC26B0802</generatorID>
+<ownerDesignName>A2models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94B9B7F6-6979-9F8F-EFC0-6DF9FA3E516D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
