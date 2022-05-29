@@ -60,8 +60,30 @@ INSERT INTO insurance_company VALUES
 (3,'I did it again Insurance Inc.','Wordstreet 11',2000);
 INSERT INTO insurance_company VALUES
 (4,'Crash test dummies Inc.','Death Star 1',3000);
+INSERT INTO insurance_company VALUES
+(5,'Would I lie to you','Spotify 111',9000);
+
+---- Fill table owned_cars
 INSERT INTO owned_cars VALUES
-(0,1,0,1,1,1);
+(1,1111,1,22,9,1000);
+INSERT INTO owned_cars VALUES
+(2,10,2,21,8,6000);
+INSERT INTO owned_cars VALUES
+(3,256000,3,31,7,6000);
+INSERT INTO owned_cars VALUES
+(4,454545,4,41,6,7000);
+INSERT INTO owned_cars VALUES
+(5,4523,4,32,5,5000);
+INSERT INTO owned_cars VALUES
+(6,47896,0,22,4,5000);
+INSERT INTO owned_cars VALUES
+(7,23654,2,41,4,4000);
+INSERT INTO owned_cars VALUES
+(8,1452,3,666,3,2000);
+INSERT INTO owned_cars VALUES
+(9,2541,2,42,2,1000);
+INSERT INTO owned_cars VALUES
+(10,1524,2,41,1,1001);
 
 ---- Fill table car_index
 INSERT INTO car_index VALUES
