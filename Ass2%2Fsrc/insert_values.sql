@@ -11,23 +11,23 @@ DROP TABLE insurance_package;
 INSERT INTO customer VALUES
 (1,'Michael', 'Knight', 4000)
 INSERT INTO customer VALUES
-(1,'The', 'Batman', 4000)
+(2,'The', 'Batman', 4000)
 INSERT INTO customer VALUES
-(1,'Till', 'Schweiger', 1000)
+(3,'Till', 'Schweiger', 1000)
 INSERT INTO customer VALUES
-(1,'Stephan', 'King', 401)
+(4,'Stephan', 'King', 401)
 INSERT INTO customer VALUES
-(1,'Queen', 'Elisabeth', 5000)
+(5,'Queen', 'Elisabeth', 5000)
 INSERT INTO customer VALUES
-(1,'Ashanti', 'Ashley', 7000)
+(6,'Ashanti', 'Ashley', 7000)
 INSERT INTO customer VALUES
-(1,'Shelton', 'Hubert', 6000)
+(7,'Shelton', 'Hubert', 6000)
 INSERT INTO customer VALUES
-(1,'Tom', 'Piper', 8000)
+(8,'Tom', 'Piper', 8000)
 INSERT INTO customer VALUES
-(1,'Jill', 'Morission', 5000)
+(9,'Jill', 'Morission', 5000)
 INSERT INTO customer VALUES
-(1,'Michael', 'Ford', 2000)
+(10,'Michael', 'Ford', 2000)
 
 ---- Fill table city
 INSERT INTO city VALUES
@@ -53,15 +53,42 @@ INSERT INTO city VALUES
 
 ---- Fill table insurance_company
 INSERT INTO insurance_company VALUES
-(0,'How Bizarre Versicherungen','Smallland 34',4000)
+(1,'How Bizarre Versicherungen','Smallland 34',4000)
+INSERT INTO insurance_company VALUES
+(2,'Ooops Insurance','Next Corner Left 46',4000)
+INSERT INTO insurance_company VALUES
+(3,'I did it again Insurance Inc.','Wordstreet 11',2000)
+INSERT INTO insurance_company VALUES
+(4,'Crash test dummies Inc.','Death Star 1',3000)
+INSERT INTO insurance_company VALUES
+(5,'Dont look back in Anger','Hotel California Drive 1',401)
+
 
 ---- Fill table owned_cars
-INSERT INTO insurance_company VALUES
+INSERT INTO owned_cars VALUES
 (0,1,0,1,1,1)
 
 ---- Fill table car_index
-INSERT INTO insurance_company VALUES
-(1;'Tesla', 'Model Y')
+INSERT INTO car_index VALUES
+(1000;'Tesla', 'Model Y')
+INSERT INTO car_index VALUES
+(2000;'Ford', 'Focus')
+INSERT INTO car_index VALUES
+(4000;'DeLorean', 'DMC-12')
+INSERT INTO car_index VALUES
+(5000;'Batmobile', 'Tumbler')
+INSERT INTO car_index VALUES
+(6000;'Opel', 'Manta')
+INSERT INTO car_index VALUES
+(7000;'GMC', 'Vandura')
+INSERT INTO car_index VALUES
+(8000;'BMW', 'i3')
+INSERT INTO car_index VALUES
+(1001;'Tesla', 'Model 3')
+INSERT INTO car_index VALUES
+(9000;'Cadilac', 'ETCO-1')
+INSERT INTO car_index VALUES
+(0000;'Unknown', 'Unknown')
 
 ---- Fill table car_colour
 INSERT INTO car_colour VALUES
@@ -76,5 +103,25 @@ INSERT INTO car_colour VALUES
 (4,'Green')
 
 ---- Fill table insurance_package
-INSERT INTO insurance_company VALUES
-(1,'Gold PRemium', 200, 1)
+INSERT INTO insurance_package VALUES
+(20,'Ooops- Nothing Included', 100, 2)
+INSERT INTO insurance_package VALUES
+(21,'Ooops- only wheels Included', 200, 2)
+INSERT INTO insurance_package VALUES
+(22,'Ooops- we will pay all', 300, 2)
+INSERT INTO insurance_package VALUES
+(23,'Ooops- we will pay all and more', 1000, 2)
+INSERT INTO insurance_package VALUES
+(31,'Basic', 99 3)
+INSERT INTO insurance_package VALUES
+(32,'Medium', 199, 3)
+INSERT INTO insurance_package VALUES
+(34,'Medium Rare', 299, 3)
+INSERT INTO insurance_package VALUES
+(41,'one', 101, 4)
+INSERT INTO insurance_package VALUES
+(43,'two', 202, 4)
+INSERT INTO insurance_package VALUES
+(42,'three', 202, 4)
+INSERT INTO insurance_package VALUES
+(666,'you get nothing', 0, 1)
