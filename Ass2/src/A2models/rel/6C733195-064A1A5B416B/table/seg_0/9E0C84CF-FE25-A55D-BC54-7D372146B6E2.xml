@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="9E5ECC6D-2749-B405-CDA0-0AF2FFE4327E">
+<Column name="owned_car_id" id="9E5ECC6D-2749-B405-CDA0-0AF2FFE4327E">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>1F11C664-411A-B8D1-6DAF-7DB846B8F99F</generatorID>
@@ -24,14 +24,13 @@
 <createdTime>2022-05-28 11:51:36 UTC</createdTime>
 <generatorID>B2907051-442C-4182-F1B8-0BA61DD60E44</generatorID>
 <ownerDesignName>A2models</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="car_colour_colour_id" id="FC1254D1-2905-A159-7E9F-778EE65D1674">
+<Column name="car_colour_id" id="FC1254D1-2905-A159-7E9F-778EE65D1674">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>8742935B-281E-B548-54C8-E74F1A6E3B6C</generatorID>
@@ -45,12 +44,11 @@
 <colAssociation fkAssociation="CE458312-432E-9F23-6F42-F9B5FD04911C" referredColumn="4ED78CA9-319F-9AAA-014C-CF714377A83F"/>
 </associations>
 </Column>
-<Column name="insurance_package_package_id" id="956435C5-E293-DBDA-4EF1-721219DBE213">
+<Column name="package_id" id="956435C5-E293-DBDA-4EF1-721219DBE213">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>A2D031AE-F426-BF23-8800-A1EC6AF7ABD8</generatorID>
 <ownerDesignName>A2models</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -61,7 +59,7 @@
 <colAssociation fkAssociation="E23FC26D-DEEC-F61A-0348-C80F7B93ADBB" referredColumn="FECF7C8E-52FA-FF58-1E41-618B50DE1F02"/>
 </associations>
 </Column>
-<Column name="customer_customer_id" id="FFE1D3D6-88E3-A192-6694-44A6E5A7E494">
+<Column name="customer_id" id="FFE1D3D6-88E3-A192-6694-44A6E5A7E494">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>4E53BF47-CBB2-571A-90D1-E4E531F44652</generatorID>
@@ -76,7 +74,7 @@
 <colAssociation fkAssociation="091DC973-29E5-82E1-57C5-2386C4434BF3" referredColumn="03A78D04-3EA7-402A-F65E-6E1700AE284F"/>
 </associations>
 </Column>
-<Column name="car_index_car_id" id="8944A2F8-0215-ED4B-339F-AFB24496C8B2">
+<Column name="car_index_id" id="8944A2F8-0215-ED4B-339F-AFB24496C8B2">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>DCE4931A-E0A1-007A-7372-A51D00D50BA1</generatorID>

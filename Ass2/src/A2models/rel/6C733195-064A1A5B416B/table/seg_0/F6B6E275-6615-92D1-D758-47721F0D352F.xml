@@ -24,7 +24,6 @@
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>CD892446-705F-7B7D-0CBB-53EE98977D93</generatorID>
 <ownerDesignName>A2models</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +36,6 @@
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>E2727679-6BFD-5649-9692-A318106CE47F</generatorID>
 <ownerDesignName>A2models</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -45,7 +43,7 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="city_city_zip" id="097218A7-BE34-263D-79C2-6189384C1F8E">
+<Column name="zip_code" id="097218A7-BE34-263D-79C2-6189384C1F8E">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>EA838B28-60F9-35AD-FA29-0C5C4C2044DC</generatorID>

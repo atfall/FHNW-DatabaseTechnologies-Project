@@ -43,7 +43,7 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="city_city_zip" id="94B9B7F6-6979-9F8F-EFC0-6DF9FA3E516D">
+<Column name="zip_code" id="94B9B7F6-6979-9F8F-EFC0-6DF9FA3E516D">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>
 <generatorID>52196D58-D582-D273-90BB-E49F2B077C78</generatorID>
