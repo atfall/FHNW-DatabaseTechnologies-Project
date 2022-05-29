@@ -65,25 +65,25 @@ INSERT INTO owned_cars VALUES
 
 ---- Fill table car_index
 INSERT INTO car_index VALUES
-(1000;'Tesla', 'Model Y');
+(1000,'Tesla', 'Model Y');
 INSERT INTO car_index VALUES
-(2000;'Ford', 'Focus');
+(2000,'Ford', 'Focus');
 INSERT INTO car_index VALUES
-(4000;'DeLorean', 'DMC-12');
+(4000,'DeLorean', 'DMC-12');
 INSERT INTO car_index VALUES
-(5000;'Batmobile', 'Tumbler');
+(5000,'Batmobile', 'Tumbler');
 INSERT INTO car_index VALUES
-(6000;'Opel', 'Manta');
+(6000,'Opel', 'Manta');
 INSERT INTO car_index VALUES
-(7000;'GMC', 'Vandura');
+(7000,'GMC', 'Vandura');
 INSERT INTO car_index VALUES
-(8000;'BMW', 'i3');
+(8000,'BMW', 'i3');
 INSERT INTO car_index VALUES
-(1001;'Tesla', 'Model 3');
+(1001,'Tesla', 'Model 3');
 INSERT INTO car_index VALUES
-(9000;'Cadilac', 'ETCO-1');
+(9000,'Cadilac', 'ETCO-1');
 INSERT INTO car_index VALUES
-(0000;'Unknown', 'Unknown');
+(0000,'Unknown', 'Unknown');
 
 ---- Fill table car_colour
 INSERT INTO car_colour VALUES
