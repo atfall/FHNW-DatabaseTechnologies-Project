@@ -103,17 +103,6 @@
 <colUsage columnID="9E5ECC6D-2749-B405-CDA0-0AF2FFE4327E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="206FC200-8AC3-13C4-D244-852F5A6163B7" name="owned_cars__IDX">
-<createdBy>Adam</createdBy>
-<createdTime>2022-05-28 11:32:29 UTC</createdTime>
-<ownerDesignName>A2models</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>B19A66D7-71BA-41F2-088B-89E1FEB97DD3</relationGeneratorID>
-<indexColumnUsage>
-<colUsage columnID="8944A2F8-0215-ED4B-339F-AFB24496C8B2"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="4141E733-5B0D-2E31-9D6C-3D4E35CBEFB0" name="customer_id_FK">
 <createdBy>Adam</createdBy>
 <createdTime>2022-05-28 11:32:29 UTC</createdTime>

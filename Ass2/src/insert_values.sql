@@ -65,11 +65,6 @@ CREATE TABLE owned_cars (
     car_index_id  INTEGER NOT NULL
 );
 
--- CREATE UNIQUE INDEX owned_cars__idx ON
---    owned_cars (
---        car_index_id
---    ASC );
-
 ALTER TABLE owned_cars ADD CONSTRAINT owned_cars_pk PRIMARY KEY ( owned_car_id );
 
 ALTER TABLE owned_cars
