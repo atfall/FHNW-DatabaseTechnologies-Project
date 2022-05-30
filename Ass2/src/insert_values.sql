@@ -236,3 +236,22 @@ INSERT INTO owned_cars VALUES
 (9,2541,2,42,2,1000);
 INSERT INTO owned_cars VALUES
 (10,1524,2,41,1,1001);
+
+
+----Stored Procedure
+--Prints company and available packages when the company id is provided
+CREATE OR REPLACE PROCEDURE availablePackages(p_company_id NUMBER)
+IS
+r_package varchar(50);
+r_company_name varchar(50);
+BEGIN
+SELECT company_name INTO r_company_name FROM insurance_company WHERE company_id = p_company_id;
+for c in (SELECT package_name INTO r_package FROM insurance_package WHERE company_id = p_company_id)
+loop
+r_package:=c.package_name;
+DBMS_OUTPUT.PUT_LINE(r_company_name || ': ' || r_package);
+end loop;
+END;
+/
+
+EXEC availablePackages(2)
