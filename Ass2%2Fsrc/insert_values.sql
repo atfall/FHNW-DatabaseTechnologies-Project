@@ -129,7 +129,7 @@ INSERT INTO insurance_package VALUES
 INSERT INTO insurance_package VALUES
 (23,'Ooops- we will pay all and more', 1000, 2);
 INSERT INTO insurance_package VALUES
-(31,'Basic', 99 3);
+(31,'Basic', 99, 3);
 INSERT INTO insurance_package VALUES
 (32,'Medium', 199, 3);
 INSERT INTO insurance_package VALUES
