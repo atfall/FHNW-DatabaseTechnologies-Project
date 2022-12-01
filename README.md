@@ -1,1 +1,1 @@
-# Database Technologies Project - FHNW
+# Database Technologies Project @ FHNW
